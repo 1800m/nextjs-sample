@@ -40,7 +40,6 @@ export default function Home({all_posts_data}) {
         <div className={styles.grid}>
           {all_posts_data.map(({id, title, date, thumbnail}) => {
             return (
-              // TODO: 動的ルーティング設定
               <article key={id}>
                 <Link href={`/posts/${id}`}>
                   <img
